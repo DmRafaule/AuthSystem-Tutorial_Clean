@@ -6,7 +6,7 @@
 	<div class="auth_form">
 		<div class="on-touch__feedback-forms-el">
 		{% csrf_token %}
-		<form  class="form_form form_login" id="toLogin" action="send_new_user" method="get">
+		<form  enctype="multipart/form-data" class="form_form form_login" id="toLogin">
 		<div id="common-error" class="hint-container on-touch__feedback"></div>
 			<div class="on-touch__feedback">
 				<input class="btn" placeholder="username" type="text" name="username" autocomplete="off" id="username">
@@ -21,10 +21,11 @@
 				<input class="btn" placeholder="retype password" type="password" name="repassword" autocomplete="off" id="repassword">
 			</div>
 			<div class="on-touch__feedback">
-				<button class="butt btn-red" type="submit">Register</button>
+				<div id="signup" class="butt btn-red">Register</button>
 			</div>
 		</form> 
 		</div>
 	</div>
 </div>
+<script src="{% static 'Auth/js/on_signup.js' %}"></script>
 {% endblock %}

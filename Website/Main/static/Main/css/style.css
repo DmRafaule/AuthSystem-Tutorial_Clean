@@ -651,6 +651,7 @@ body .on-touch__feedback .btn-red {
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
   font-weight: 400;
+  cursor: pointer;
 }
 
 body .on-touch__feedback ::placeholder {
