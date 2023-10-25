@@ -651,6 +651,7 @@ body .on-touch__feedback .btn-red {
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
   font-weight: 400;
+  max-width: fit-content;
   cursor: pointer;
 }
 
@@ -1409,4 +1410,7 @@ body footer .content-footer .footer__r-el {
 }
 .ref{
 	color: white;
+}
+.hint-container{
+	padding: 10px;
 }
